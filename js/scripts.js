@@ -1,13 +1,16 @@
 $(document).ready(function (){
   $("#formOne").submit(function(event){
     event.preventDefault();
+
     var inputNumber = parseInt($("input#enterNumber").val())
     var newArray = [];
+    var numSplit = function(){
     var inputChange = inputNumber
+
     for(i=1; i < newArray; i++){
       newArray.push(inputChange)
 
-      inputChange = 1;
+      inputChange -= 1;
       }
       for (i = 0; i < newArray.length; i ++){
         if(newArray[i].toString().includes(3)){
@@ -21,5 +24,6 @@ $(document).ready(function (){
       }
 
     }
- });
+ };
+});
 });
