@@ -1,29 +1,13 @@
-$(document).ready(function (){
-  $("#formOne").submit(function(event){
-    event.preventDefault();
-
-    var inputNumber = parseInt($("input#enterNumber").val())
-    var newArray = [];
-    var numSplit = function(){
-    var inputChange = inputNumber
-
-    for(i=1; i < newArray; i++){
-      newArray.push(inputChange)
-
-      inputChange -= 1;
-      }
-      for (i = 0; i < newArray.length; i ++){
-        if(newArray[i].toString().includes(3)){
-        newArray[i] = "I'm sorry, Dave. I'm afraid I can't do that";
-      }
-      else if (newArray[i].toString().includes(2)){
-        newArray[i] = "boop";
-      }
-      else if (newArray[i].toString().includes(1)){
-        newArray[i] = "beep";
-      }
-
-    }
- };
-});
-});
+//buisness
+var numberSting = function(numberInput){
+var 
+if (number.toString().includes("3")) {
+  return "im sorry, Dave. I'm afraid I cant do that";
+} else if (number.toString().includes("2")) {
+  return "Boop!";
+} else if (number.toString().includes("1")) {
+  return "Beep!";
+} else {
+  return number;
+}
+};
