@@ -1,8 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function (){
   $("#formOne").submit(function(event){
     event.preventDefault();
     var inputNumber = parseInt($("input#enterNumber").val())
-    var newArray = []
+    var newArray = [];
     var inputChange = inputNumber
     for(i=1; i < newArray; i++){
       newArray.push(inputChange)
@@ -16,8 +16,10 @@ $(document).ready(function(){
       else if (newArray[i].toString().includes(2)){
         newArray[i] = "boop";
       }
-      else if (newArray[i].toString().includes(2)){
+      else if (newArray[i].toString().includes(1)){
         newArray[i] = "beep";
       }
+
+    }
  });
 });
