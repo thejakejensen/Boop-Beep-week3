@@ -14,6 +14,20 @@ _in this website a user will input a number and recieve back a list ofnumbers le
 * _download necessary packages
 * _open in chrome browser_
 
+## Specs
+|spec|input|output|
+|----|-----|------|
+|the program returns a range of numbers from 0 to the users number |4|0,1,2,3,4|
+|the program will give back a beep when a number has a 1 in it|91|beep|
+|the program will give back a boop when a number has a 2 in it|24|boop|
+|the program will give back "im sorry, Dave. Im afraid I cant do that" when a number has a 3 in it|36|im sorry, Dave. Im afraid I cant do that|
+|If a number has a 1 and a 3 it will return for the larger number|13|im sorry, Dave. Im afraid I cant do that|
+if a number has a 2 and a 3 it will return for the larger number|392|im sorry, Dave. Im afraid I cant do that|
+|if a number has a 1 and a 2 in it then it will return for the larger number|21|Boop|
+
+
+
+
 
 ## Known Bugs
 
