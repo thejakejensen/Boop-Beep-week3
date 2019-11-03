@@ -2,16 +2,29 @@
 var numberSting = function(numberInput){
   var emptyArray = [];
   for (var i=0; i<=numberInput; i++){
-    if (number.toString().includes("3")) {
+    if (i.toString().includes("3")) {
       emptyArray.push("im sorry, Dave. I'm afraid I cant do that");
-    } else if (number.toString().includes("2")) {
-      emptyArray.push(Boop!";
-    } else if (number.toString().includes("1")) {
-      emptyArray.push(Beep!";
+    } else if (i.toString().includes("2")) {
+      emptyArray.push("Boop!");
+    } else if (i.toString().includes("1")) {
+      emptyArray.push("Beep!");
     } else {
-      emptyArray.push(numberInput); /if the other ones dont catch then it just returns the normal number
+      emptyArray.push(i); //if the other ones dont catch then it just returns the normal number
     }
   }
-  return results;
+  return emptyArray;
 }
 // ui logic
+$(document).ready(function() {
+  $("form#babam").submit(function(event) {
+    event.preventDefault();
+
+    var finalNum = parseInt($("input#enterNumber").val());
+    var finalResult = numberSting(finalNum);
+
+    $("<li>" + finalResult + "</li>").appendTo("#answer");
+    $("#answer").last().click(function() {
+    $("#answer").empty();
+    });
+  });
+});
